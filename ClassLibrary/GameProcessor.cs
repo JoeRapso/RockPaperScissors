@@ -4,90 +4,135 @@
     {
         public static string MatchResult(string playerChoice, string computerChoice)
         {
-            if (playerChoice == "Rock" && computerChoice == "Paper")
+            switch (playerChoice, computerChoice)
             {
-                return "ComputerWins";
+                case ("Rock", "Paper"):
+                    return "ComputerWins";
+                case ("Rock", "Scissors"):
+                    return "PlayerWins";
+                case ("Rock", "Lizard"):
+                    return "PlayerWins";
+                case ("Rock", "Spock"):
+                    return "ComputerWins";
+                case ("Paper", "Rock"):
+                    return "PlayerWins";
+                case ("Paper", "Scissors"):
+                    return "ComputerWins";
+                case ("Paper", "Lizard"):
+                    return "ComputerWins";
+                case ("Paper", "Spock"):
+                    return "PlayerWins";
+                case ("Scissors", "Rock"):
+                    return "ComputerWins";
+                case ("Scissors", "Paper"):
+                    return "PlayerWins";
+                case ("Scissors", "Lizard"):
+                    return "PlayerWins";
+                case ("Scissors", "Spock"):
+                    return "ComputerWins";
+                case ("Lizard", "Rock"):
+                    return "ComputerWins";
+                case ("Lizard", "Paper"):
+                    return "PlayerWins";
+                case ("Lizard", "Scissors"):
+                    return "ComputerWins";
+                case ("Lizard", "Spock"):
+                    return "PlayerWins";
+                case ("Spock", "Rock"):
+                    return "PlayerWins";
+                case ("Spock", "Paper"):
+                    return "ComputerWins";
+                case ("Spock", "Scissors"):
+                    return "PlayerWins";
+                case ("Spock", "Lizard"):
+                    return "ComputerWins";
+                default:
+                    return "Draw";
             }
-            else if (playerChoice == "Rock" && computerChoice == "Scissors")
-            {
-                return "PlayerWins";
-            }
-            else if (playerChoice == "Rock" && computerChoice == "Lizard")
-            {
-                return "PlayerWins";
-            }
-            else if (playerChoice == "Rock" && computerChoice == "Spock")
-            {
-                return "ComputerWins";
-            }
-            else if (playerChoice == "Paper" && computerChoice == "Rock")
-            {
-                return "PlayerWins";
-            }
-            else if (playerChoice == "Paper" && computerChoice == "Scissors")
-            {
-                return "ComputerWins";
-            }
-            else if (playerChoice == "Paper" && computerChoice == "Lizard")
-            {
-                return "ComputerWins";
-            }
-            else if (playerChoice == "Paper" && computerChoice == "Spock")
-            {
-                return "PlayerWins";
-            }
-            else if (playerChoice == "Scissors" && computerChoice == "Rock")
-            {
-                return "ComputerWins";
-            }
-            else if (playerChoice == "Scissors" && computerChoice == "Paper")
-            {
-                return "PlayerWins";
-            }
-            else if (playerChoice == "Scissors" && computerChoice == "Lizard")
-            {
-                return "PlayerWins";
-            }
-            else if (playerChoice == "Scissors" && computerChoice == "Spock")
-            {
-                return "ComputerWins";
-            }
-            else if (playerChoice == "Lizard" && computerChoice == "Rock")
-            {
-                return "ComputerWins";
-            }
-            else if (playerChoice == "Lizard" && computerChoice == "Paper")
-            {
-                return "PlayerWins";
-            }
-            else if (playerChoice == "Lizard" && computerChoice == "Scissors")
-            {
-                return "ComputerWins";
-            }
-            else if (playerChoice == "Lizard" && computerChoice == "Spock")
-            {
-                return "PlayerWins";
-            }
-            else if (playerChoice == "Spock" && computerChoice == "Rock")
-            {
-                return "PlayerWins";
-            }
-            else if (playerChoice == "Spock" && computerChoice == "Paper")
-            {
-                return "ComputerWins";
-            }
-            else if (playerChoice == "Spock" && computerChoice == "Scissors")
-            {
-                return "PlayerWins";
-            }
-            else if (playerChoice == "Spock" && computerChoice == "Lizard")
-            {
-                return "ComputerWins";
-            }
-            else
-            {
-                return "Draw";
-            }
+            //if (playerChoice == "Rock" && computerChoice == "Paper")
+            //{
+            //    return "ComputerWins";
+            //}
+            //else if (playerChoice == "Rock" && computerChoice == "Scissors")
+            //{
+            //    return "PlayerWins";
+            //}
+            //else if (playerChoice == "Rock" && computerChoice == "Lizard")
+            //{
+            //    return "PlayerWins";
+            //}
+            //else if (playerChoice == "Rock" && computerChoice == "Spock")
+            //{
+            //    return "ComputerWins";
+            //}
+            //else if (playerChoice == "Paper" && computerChoice == "Rock")
+            //{
+            //    return "PlayerWins";
+            //}
+            //else if (playerChoice == "Paper" && computerChoice == "Scissors")
+            //{
+            //    return "ComputerWins";
+            //}
+            //else if (playerChoice == "Paper" && computerChoice == "Lizard")
+            //{
+            //    return "ComputerWins";
+            //}
+            //else if (playerChoice == "Paper" && computerChoice == "Spock")
+            //{
+            //    return "PlayerWins";
+            //}
+            //else if (playerChoice == "Scissors" && computerChoice == "Rock")
+            //{
+            //    return "ComputerWins";
+            //}
+            //else if (playerChoice == "Scissors" && computerChoice == "Paper")
+            //{
+            //    return "PlayerWins";
+            //}
+            //else if (playerChoice == "Scissors" && computerChoice == "Lizard")
+            //{
+            //    return "PlayerWins";
+            //}
+            //else if (playerChoice == "Scissors" && computerChoice == "Spock")
+            //{
+            //    return "ComputerWins";
+            //}
+            //else if (playerChoice == "Lizard" && computerChoice == "Rock")
+            //{
+            //    return "ComputerWins";
+            //}
+            //else if (playerChoice == "Lizard" && computerChoice == "Paper")
+            //{
+            //    return "PlayerWins";
+            //}
+            //else if (playerChoice == "Lizard" && computerChoice == "Scissors")
+            //{
+            //    return "ComputerWins";
+            //}
+            //else if (playerChoice == "Lizard" && computerChoice == "Spock")
+            //{
+            //    return "PlayerWins";
+            //}
+            //else if (playerChoice == "Spock" && computerChoice == "Rock")
+            //{
+            //    return "PlayerWins";
+            //}
+            //else if (playerChoice == "Spock" && computerChoice == "Paper")
+            //{
+            //    return "ComputerWins";
+            //}
+            //else if (playerChoice == "Spock" && computerChoice == "Scissors")
+            //{
+            //    return "PlayerWins";
+            //}
+            //else if (playerChoice == "Spock" && computerChoice == "Lizard")
+            //{
+            //    return "ComputerWins";
+            //}
+            //else
+            //{
+            //    return "Draw";
+            //}
         }
 
         public static Dictionary<string, int> GameChoiceFrequency(Dictionary<string, int> gameChoiceFrequency, string playerCoice, string computerChoice) 

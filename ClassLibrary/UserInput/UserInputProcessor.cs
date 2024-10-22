@@ -4,21 +4,22 @@ namespace ClassLibrary.UserInput
 {
     public static class UserInputProcessor
     {
-        public static string GetMenuChoice(List<string> options)
+        public static string GetMenuChoice()
         {
 
             string menuChoice = Console.ReadLine();
 
-            bool isValid = UserInputValidator.ValidateMenuChoice(menuChoice, options.Count);
+            bool isValid = UserInputValidator.ValidateMenuChoice(menuChoice);
 
             while (isValid == false)
             {
                 MenuMessages.WrongChoice();
                 menuChoice = Console.ReadLine();
-                isValid = UserInputValidator.ValidateMenuChoice(menuChoice, options.Count);
+                isValid = UserInputValidator.ValidateMenuChoice(menuChoice);
             }
 
-            return options[int.Parse(menuChoice) - 1];
+            return Enum.GetName(typeof(Enums.MenuChoices), int.Parse(menuChoice));
+        
         }
     }
 }

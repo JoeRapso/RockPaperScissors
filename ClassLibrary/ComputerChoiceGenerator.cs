@@ -1,10 +1,15 @@
-﻿namespace ClassLibrary
+﻿using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
+
+namespace ClassLibrary
 {
     public static class ComputerChoiceGenerator
     {
+        private static Random rnd {  get; set; } = new Random();
         public static string ComputerChoice()
         {
-            Random rnd = new Random();
+            
+            //Random rnd = new Random();
             int choice = rnd.Next(1, 6);
 
             if (choice == 1)

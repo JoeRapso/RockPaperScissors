@@ -2,28 +2,28 @@
 {
     public static class MenuText
     {
-        public static void MainMenu(List<string> options)
+        public static void MainMenu()
         {
             Console.WriteLine("Welcome to a game of Rock, Paper, Scissors, Lizard and Spock!");
             Console.WriteLine("Play a game against the computer and lets see who wins!");
 
 
-            for (int i = 0; i < options.Count; i++)
+            foreach(int i in Enum.GetValues(typeof(Enums.MenuChoices)))
             {
-                Console.WriteLine($"{i + 1}. {options[i]}");
+                Console.WriteLine($"{i}. {Enum.GetName(typeof(Enums.MenuChoices), i)}");
             }
 
-            Console.WriteLine("Please enter a choice to procceed:");
+            Console.WriteLine("Please enter 1, 2, 3, 4, or 5 to procceed:");
         }
 
-        public static void NextRound(List<string> options)
+        public static void NextRound()
         {
             Console.WriteLine("Lets have another round!");
 
 
-            for (int i = 0; i < options.Count; i++)
+            foreach (int i in Enum.GetValues(typeof(Enums.MenuChoices)))
             {
-                Console.WriteLine($"{i + 1}. {options[i]}");
+                Console.WriteLine($"{i}. {Enum.GetName(typeof(Enums.MenuChoices), i)}");
             }
 
             Console.WriteLine("Please enter a choice to procceed:");

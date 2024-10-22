@@ -8,13 +8,22 @@ namespace ClassLibrary
     {
         public static void SaveGameHistoryToSQLiteDB(string playerChoice, string computerChoice, string matchResult, Guid gameSessionId)
         {
-            string pathToDb = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName.Replace("bin", "DB") + "\\GameHistoryDB.db";
-            string connectionString = $"Data Source={pathToDb};Version=3;";
-
-            using(IDbConnection con = new SQLiteConnection(connectionString)) 
+            try
             {
-                con.Execute($"INSERT INTO GameHistory (PlayerChoice, ComputerChoice, MatchResult, GameSessionId) values ('{playerChoice}', '{computerChoice}', '{matchResult}', '{gameSessionId.ToString()}')");
-            }       
+                string pathToDb = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName.Replace("bin", "DB") + "\\GameHistoryDB.db";
+                string connectionString = $"Data Source={pathToDb};Version=3;";
+
+                using (IDbConnection con = new SQLiteConnection(connectionString))
+                {
+                    con.Execute($"INSERT INTO GameHistory (PlayerChoice, ComputerChoice, MatchResult, GameSessionId) values ('{playerChoice}', '{computerChoice}', '{matchResult}', '{gameSessionId.ToString()}')");
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+       
         }
     }
 }

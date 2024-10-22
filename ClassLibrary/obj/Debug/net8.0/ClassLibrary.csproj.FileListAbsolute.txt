@@ -1,0 +1,12 @@
+C:\My Projects\MiniGameApp\ClassLibrary\obj\Debug\net8.0\ClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\My Projects\MiniGameApp\ClassLibrary\obj\Debug\net8.0\ClassLibrary.AssemblyInfoInputs.cache
+C:\My Projects\MiniGameApp\ClassLibrary\obj\Debug\net8.0\ClassLibrary.AssemblyInfo.cs
+C:\My Projects\MiniGameApp\ClassLibrary\obj\Debug\net8.0\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\My Projects\MiniGameApp\ClassLibrary\obj\Debug\net8.0\ClassLibrary.csproj.AssemblyReference.cache
+C:\My Projects\MiniGameApp\ClassLibrary\bin\Debug\net8.0\ClassLibrary.deps.json
+C:\My Projects\MiniGameApp\ClassLibrary\bin\Debug\net8.0\ClassLibrary.dll
+C:\My Projects\MiniGameApp\ClassLibrary\bin\Debug\net8.0\ClassLibrary.pdb
+C:\My Projects\MiniGameApp\ClassLibrary\obj\Debug\net8.0\ClassLibrary.dll
+C:\My Projects\MiniGameApp\ClassLibrary\obj\Debug\net8.0\refint\ClassLibrary.dll
+C:\My Projects\MiniGameApp\ClassLibrary\obj\Debug\net8.0\ClassLibrary.pdb
+C:\My Projects\MiniGameApp\ClassLibrary\obj\Debug\net8.0\ref\ClassLibrary.dll

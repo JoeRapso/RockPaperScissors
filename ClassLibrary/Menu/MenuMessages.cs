@@ -7,9 +7,21 @@
             Console.WriteLine("You have entered an invalid choice");
         }
 
-        public static void DisplayComputerChoice(string computerChoice) 
+        public static void DisplayMatchResult(string computerChoice, string matchResult) 
         {
             Console.WriteLine($"The AI chose {computerChoice} for this turn\n");
+            switch (matchResult) 
+            {
+                case "ComputerWins":
+                    Console.WriteLine("You lost this match!\n");
+                    break;
+                case "PlayerWins":
+                    Console.WriteLine("You won this match!\n");
+                    break;
+                default:
+                    Console.WriteLine("This match was a draw. No one won.\n");
+                    break;
+            }
         }
 
         public static void DisplayGameDetails(Dictionary<string, int> gameWins, Dictionary<string, int> gameChoiceFrequency, int gameTurns)
@@ -39,6 +51,22 @@
             }
 
         }
+
+        //public static void DisplayMatchResult(string matchResult)
+        //{
+        //    if (matchResult == "ComputerWins")
+        //    {
+        //        Console.WriteLine("You lost this match!");
+        //    }
+        //    else if(matchResult == "PlayerWins")
+        //    {
+        //        Console.WriteLine("You won this match!");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("This match was a draw. No one won!");
+        //    }
+        //}
 
         public static void AIMessage(Dictionary<string, int> gameWins) 
         {

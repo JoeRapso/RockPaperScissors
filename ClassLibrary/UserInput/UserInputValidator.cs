@@ -1,8 +1,10 @@
-﻿namespace ClassLibrary.UserInput
+﻿using System;
+
+namespace ClassLibrary.UserInput
 {
     public static class UserInputValidator
     {
-        public static bool ValidateMenuChoice(string input, int numberOfWelcomeMenuOptions)
+        public static bool ValidateMenuChoice(string input)
         {
             try
             {
@@ -14,7 +16,7 @@
                 {
                     return false;
                 }
-                else if (int.Parse(input) > numberOfWelcomeMenuOptions)
+                else if (int.Parse(input) > Enum.GetNames(typeof(Enums.MenuChoices)).Length)
                 {
                     return false;
                 }
