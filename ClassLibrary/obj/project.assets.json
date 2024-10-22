@@ -438,11 +438,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\My Projects\\MiniGameApp\\ClassLibrary\\ClassLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\joera\\Desktop\\New folder (4)\\RockPaperScissors\\ClassLibrary\\ClassLibrary.csproj",
       "projectName": "ClassLibrary",
-      "projectPath": "C:\\My Projects\\MiniGameApp\\ClassLibrary\\ClassLibrary.csproj",
+      "projectPath": "C:\\Users\\joera\\Desktop\\New folder (4)\\RockPaperScissors\\ClassLibrary\\ClassLibrary.csproj",
       "packagesPath": "C:\\Users\\joera\\.nuget\\packages\\",
-      "outputPath": "C:\\My Projects\\MiniGameApp\\ClassLibrary\\obj\\",
+      "outputPath": "C:\\Users\\joera\\Desktop\\New folder (4)\\RockPaperScissors\\ClassLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\joera\\AppData\\Roaming\\NuGet\\NuGet.Config",

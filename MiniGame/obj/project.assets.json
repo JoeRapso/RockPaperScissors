@@ -456,11 +456,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\My Projects\\MiniGameApp\\MiniGame\\MiniGame.csproj",
+      "projectUniqueName": "C:\\Users\\joera\\Desktop\\New folder (4)\\RockPaperScissors\\MiniGame\\MiniGame.csproj",
       "projectName": "MiniGame",
-      "projectPath": "C:\\My Projects\\MiniGameApp\\MiniGame\\MiniGame.csproj",
+      "projectPath": "C:\\Users\\joera\\Desktop\\New folder (4)\\RockPaperScissors\\MiniGame\\MiniGame.csproj",
       "packagesPath": "C:\\Users\\joera\\.nuget\\packages\\",
-      "outputPath": "C:\\My Projects\\MiniGameApp\\MiniGame\\obj\\",
+      "outputPath": "C:\\Users\\joera\\Desktop\\New folder (4)\\RockPaperScissors\\MiniGame\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\joera\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -478,8 +478,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\My Projects\\MiniGameApp\\ClassLibrary\\ClassLibrary.csproj": {
-              "projectPath": "C:\\My Projects\\MiniGameApp\\ClassLibrary\\ClassLibrary.csproj"
+            "C:\\Users\\joera\\Desktop\\New folder (4)\\RockPaperScissors\\ClassLibrary\\ClassLibrary.csproj": {
+              "projectPath": "C:\\Users\\joera\\Desktop\\New folder (4)\\RockPaperScissors\\ClassLibrary\\ClassLibrary.csproj"
             }
           }
         }

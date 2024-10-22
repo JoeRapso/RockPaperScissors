@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eXqVF8Ba1pY=",
+  "dgSpecHash": "s/PAU5iPDYA=",
   "success": true,
-  "projectFilePath": "C:\\My Projects\\MiniGameApp\\ClassLibrary\\ClassLibrary.csproj",
+  "projectFilePath": "C:\\Users\\joera\\Desktop\\New folder (4)\\RockPaperScissors\\ClassLibrary\\ClassLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joera\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\joera\\.nuget\\packages\\openai\\2.0.0-beta.13\\openai.2.0.0-beta.13.nupkg.sha512",
